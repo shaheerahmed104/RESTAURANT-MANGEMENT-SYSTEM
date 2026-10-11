@@ -1,0 +1,39 @@
+/* =====================================================
+   responsive.css  -  Tablet and mobile adjustments
+   ===================================================== */
+
+/* Tablets and smaller laptops */
+@media (max-width: 991.98px) {
+  .section { padding: 60px 0; }
+  .hero { min-height: auto; padding: 90px 0 70px; text-align: center; }
+  .hero .lead { margin-left: auto; margin-right: auto; }
+  .royal-carousel .carousel-item img { height: 380px; }
+  .navbar-royal .navbar-collapse { padding: 1rem 0; }
+  .navbar-royal .nav-link::after { display: none; }
+  .summary-card { position: static; margin-top: 1rem; }
+}
+
+/* Phones */
+@media (max-width: 767.98px) {
+  .royal-carousel .carousel-item img { height: 280px; }
+  .royal-carousel .carousel-caption { padding: 2rem 1rem 1rem; }
+  .royal-carousel .carousel-caption h3 { font-size: 1.2rem; }
+  .page-header { padding: 60px 0 40px; }
+  .form-panel { padding: 1.3rem; }
+  .cart-item { flex-wrap: wrap; }
+  .cart-item img { width: 64px; height: 64px; }
+  .cart-item .item-total { width: 100%; text-align: right; }
+  .stat-card h3 { font-size: 1.25rem; }
+  .order-number { font-size: 1.2rem; }
+}
+
+/* Very small phones */
+@media (max-width: 575.98px) {
+  .hero h1 { font-size: 2.2rem; }
+  .hero .btn { width: 100%; margin-bottom: .6rem; }
+  .section-title { margin-bottom: 2rem; }
+  #chatToggle { right: 14px; bottom: 14px; width: 56px; height: 56px; }
+  #chatWindow { right: 12px; bottom: 82px; height: calc(100vh - 110px); }
+  .admin-tabs { flex-wrap: nowrap; overflow-x: auto; padding-bottom: .5rem; }
+  .admin-tabs .nav-link { white-space: nowrap; }
+}
